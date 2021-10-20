@@ -9,6 +9,8 @@ import flixel.text.FlxText;
 import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
 import flixel.util.FlxColor;
+import haxe.Json;
+import haxe.format.JsonParser;
 
 class PlayState extends FlxState
 {
@@ -715,17 +717,21 @@ class PlayState extends FlxState
 			switch (spr.ID)
 			{
 				case 0:
-					spr.x = 690;
-					spr.y = 50;
+					FlxTween.tween(spr, {x: 690, y: 50}, 1.5, {ease: FlxEase.smootherStepInOut});
+				// spr.x = 690;
+				// spr.y = 50;
 				case 1:
-					spr.x = 802;
-					spr.y = 50;
+					FlxTween.tween(spr, {x: 802, y: 50}, 1.5, {ease: FlxEase.smootherStepInOut});
+				// spr.x = 802;
+				// spr.y = 50;
 				case 2:
-					spr.x = 914;
-					spr.y = 50;
+					FlxTween.tween(spr, {x: 914, y: 50}, 1.5, {ease: FlxEase.smootherStepInOut});
+				// spr.x = 914;
+				// spr.y = 50;
 				case 3:
-					spr.x = 1026;
-					spr.y = 50;
+					FlxTween.tween(spr, {x: 1026, y: 50}, 1.5, {ease: FlxEase.smootherStepInOut});
+					// spr.x = 1026;
+					// spr.y = 50;
 			}
 		});
 
@@ -734,18 +740,27 @@ class PlayState extends FlxState
 			switch (spr.ID)
 			{
 				case 0:
-					spr.x = 50;
-					spr.y = 50;
+					FlxTween.tween(spr, {x: 50, y: 50}, 1.5, {ease: FlxEase.smootherStepInOut});
+				// spr.x = 50;
+				// spr.y = 50;
 				case 1:
-					spr.x = 162;
-					spr.y = 50;
+					FlxTween.tween(spr, {x: 162, y: 50}, 1.5, {ease: FlxEase.smootherStepInOut});
+				// spr.x = 162;
+				// spr.y = 50;
 				case 2:
-					spr.x = 274;
-					spr.y = 50;
+					FlxTween.tween(spr, {x: 274, y: 50}, 1.5, {ease: FlxEase.smootherStepInOut});
+				// spr.x = 274;
+				// spr.y = 50;
 				case 3:
-					spr.x = 386;
-					spr.y = 50;
+					FlxTween.tween(spr, {x: 386, y: 50}, 1.5, {ease: FlxEase.smootherStepInOut});
+					// spr.x = 386;
+					// spr.y = 50;
 			}
 		});
+	}
+
+	function playStaticArrowsAnim(id:Int = 0)
+	{
+		if (id == 0) {}
 	}
 }
